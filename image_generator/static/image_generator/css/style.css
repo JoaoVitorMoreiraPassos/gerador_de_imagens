@@ -1,0 +1,166 @@
+:root {
+    --lvl1: #282832;
+    --lvl2: #77181e;
+    --lvl3: #a92727;
+    --lvl4: #c6d6d6;
+    --lvl5: #dee7e7;
+    --lvl6: #fe6c2b;
+    --lvl7: #340016;
+    --font-primary: sans-serif;
+    --font-headings: 'Roboto Slab', serif;
+    --spacing-gutter-large: 4rem;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-size: 1.6rem;
+    font-family: var(--font-primary);
+    background-color: var(--lvl5);
+}
+
+.main-header-container {
+    width: 100%;
+    background-color: var(--lvl1);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container {
+    max-width: 144rem;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: var(--font-headings);
+}
+
+.main-logo {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    text-decoration: none;
+    padding: 2rem;
+}
+
+.main-logo-icon {
+    color: white;
+    font-size: 3rem;
+}
+
+.main-logo-text {
+    margin-left: 1rem;
+    color: white;
+    font-size: 3.6rem;
+}
+
+.container-description {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 7rem;
+}
+
+.description-form {
+    max-width: 50rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: var(--lvl5);
+    border: 2px solid #333;
+    border-radius: 0.5rem;
+    transition: all 300ms ease-in-out;
+}
+
+.description-button,
+.description-input,
+.description-button i {
+    background: none;
+}
+
+.description-input::-webkit-description-cancel-button {
+    display: none;
+}
+
+.description-input {
+    width: 50rem;
+    height: 3.5rem;
+    max-width: 50rem;
+    border-radius: 1rem;
+    outline: none;
+    padding: 1rem;
+    font-size: 1.6rem;
+    border: 0px;
+    transition: all 300ms ease-in-out;
+}
+
+.description-button {
+    background: var(--lvl5);
+    color: #111;
+    font-weight: bold;
+    font-size: 1.5rem;
+    width: 6rem;
+    height: 3.2rem;
+    margin-right: 0.25rem;
+    border: 0px;
+    outline: none;
+    border-radius: 0.4rem;
+    transition: all 300ms ease-in-out;
+    cursor: pointer;
+}
+
+.description-button:focus {
+    background: rgba(52, 0, 22, .9);
+}
+
+.description-form:focus-within {
+    border: 2px solid var(--lvl1);
+    background: #fff;
+}
+
+.description-form:focus-within .description-button{
+    color: #fff;
+    background: var(--lvl1);
+}
+
+.container-image{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.image-container{
+    width: 90%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.image{
+    width: 360px;
+    height: 360px;
+    border-radius: 1rem;
+}
+
+

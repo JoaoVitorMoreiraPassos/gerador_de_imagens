@@ -1,0 +1,58 @@
+{%load static%}
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/fontawesome.min.css" integrity="sha512-P9vJUXK+LyvAzj8otTOKzdfF1F3UYVl13+F8Fof8/2QNb8Twd6Vb+VD52I7+87tex9UXxnzPgWA3rH96RExA7A==" crossorigin="anonymous" referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/brands.min.css" integrity="sha512-sVSECYdnRMezwuq5uAjKQJEcu2wybeAPjU4VJQ9pCRcCY4pIpIw4YMHIOQ0CypfwHRvdSPbH++dA3O4Hihm/LQ==" crossorigin="anonymous" referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/solid.min.css" integrity="sha512-tk4nGrLxft4l30r9ETuejLU0a3d7LwMzj0eXjzc16JQj+5U1IeVoCuGLObRDc3+eQMUcEQY1RIDPGvuA7SNQ2w==" crossorigin="anonymous" referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="{%static 'image_generator/css/style.css'%}">
+    <link rel="preconnect" href="https://fonts.googleapis.com"
+    >
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin
+    >
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@900&display=swap" rel="stylesheet"
+    >
+
+    <title>Home</title>
+</head>
+<body>
+    <header class="main-header-container" >
+        <div class="main-header container" >
+            <h1>
+                <a href="/" class="main-logo">
+                    <i class="fas fa-edit main-logo-icon" aria-hidden="true"></i>
+                    <span class="main-logo-text">Gerador de Imagens</span>
+                </a>
+            </h1>
+        </div>
+    </header>
+
+    <div class="container-description">
+        <div class="container">
+            <form class="description-form" method="post">
+                <input type="text" id="description-input" placeholder="Ondas do mar" class="description-input" name="description">
+                <button type="" class="description-button">
+                    Gerar
+                </button>
+            </form>
+        </div>
+    </div>
+
+    <div class="container-image">
+        <div class="image-container">
+            <img src="{{ text }}" alt="" class="image">
+        </div>
+    </div>
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="{%static 'image_generator/js/post.js'%}" type="text/javascript"></script>
+    <script src="{%static 'image_generator/js/script.js'%}" type="text/javascript"></script>
+</body>
+</html>
