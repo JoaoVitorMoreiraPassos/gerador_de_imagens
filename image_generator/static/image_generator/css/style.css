@@ -111,6 +111,7 @@ h6 {
     font-size: 1.6rem;
     border: 0px;
     transition: all 300ms ease-in-out;
+    background: transparent;
 }
 
 .description-button {
@@ -137,19 +138,19 @@ h6 {
     background: #fff;
 }
 
-.description-form:focus-within .description-button{
+.description-form:focus-within .description-button {
     color: #fff;
     background: var(--lvl1);
 }
 
-.container-image{
+.container-image {
     width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.image-container{
+.image-container {
     width: 90%;
     height: auto;
     display: flex;
@@ -157,10 +158,50 @@ h6 {
     align-items: center;
 }
 
-.image{
+.image {
     width: 360px;
     height: 360px;
     border-radius: 1rem;
 }
 
 
+.loader {
+    width: 5rem;
+    height: 5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10rem;
+    border: 1rem dotted var(--lvl1);
+    animation: spin 2s ease infinite;
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+@media (max-width: 768px) {
+    .container-description {
+        padding: 3rem;
+    }
+
+    .description-input {
+        width: 100%;
+        max-width: 100%;
+    }
+
+    .description-button {
+        width: 10rem;
+    }
+
+    .image {
+        width: 100%;
+        height: auto;
+    }
+}
